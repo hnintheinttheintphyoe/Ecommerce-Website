@@ -104,7 +104,7 @@
     background-color: #f3558e;
     position: absolute;
     top: 50px;
-    right: 530px;
+    right: 485px;
     transform: translateX(-50%);
 
 }
@@ -112,7 +112,24 @@
     color: #f3558e;
 }
 .product:hover{
-transform: translateY(-5px);
+transform: translateY(-3px);
 }
+.offer-smart{
+flex-basis: 50%;
+    min-width: 400px;
+    
+}
+.offer-smart img{
+    width: 80%;
+    margin-left: 100px;
+}
+.offer{
+    padding:30px 0 ;
+    background: radial-gradient(#fff,#ffd5de);
+}
+.offer-smart h1{
+    padding-bottom: 20px;
+}
+
 
 
