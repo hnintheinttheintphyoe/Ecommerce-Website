@@ -8,26 +8,32 @@
 
 .header{
     background: radial-gradient(#fff,#ffd5de);
-    height: 700px;
+    
+    margin-bottom: 30px;
 }
 
 .logo{
     width: 130px;
     height: 40px;
 }
+.fa-shopping-bag{
+    padding-left: 15px;
+    padding-bottom: 4px;
+}
 
-.row{
+ .row{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.col-md-4{
+.header .col-6{
+    margin: 80px 0;
     flex-basis: 50%;
     min-width: 300px;
 }
 
-.style-text h1{
+.header .col-6 h1{
     padding-bottom:20px ;
     font-size: 50px;
 }
@@ -47,44 +53,43 @@
     background-color:#f386ae ;
     color: #fff;
 }
-.nav-bottom{
-    padding-top: 80px;
-}
+
+
 .feature{
-    margin: 50px 0;
+    margin: 80px 0;
 
 }
-.col-3{
+.feature .col-3{
     flex-basis: 30%;
     min-width: 250px;
 }
-.col-3 img{
+.feature .col-3 img{
     width: 100%;
     
 }
 .small-container{
     max-width: 1080px;
-    margin: auto;
     padding-left: 30px;
     padding-right: 30px;
+    margin: auto;
 }
 
-.product{
+.feature-product .col-3{
     flex-basis: 25%;
     min-width: 200px;
     transition: transform 0.5s;
 
 }
-.product img{
+.feature-product .col-3 img{
     width: 100%;
-    padding-bottom: 30px;
+    
 }
 .product-container{
     
     margin: auto;
-    width: 1080px;
+    max-width: 1080px;
 }
-.product h5, p{
+.feature-product .col-3 h5, p{
     color: rgb(163, 159, 159);
 }
 .fea-product{
@@ -111,7 +116,7 @@
  i, .icon i{
     color: #f3558e;
 }
-.product:hover{
+.feature-product .col-3:hover{
 transform: translateY(-3px);
 }
 .offer-smart{
@@ -128,6 +133,9 @@ flex-basis: 50%;
     background: radial-gradient(#fff,#ffd5de);
 }
 .offer-smart h1{
+    padding-bottom: 20px;
+}
+.offer-smart small{
     padding-bottom: 20px;
 }
 .person{
@@ -203,7 +211,7 @@ flex-basis: 50%;
      .footer .col-3{
          
          flex-basis: 20%;
-         min-width: 100px;
+         min-width: 200px;
      }
      .footer h4{
          color: #e3e3e3;
@@ -214,11 +222,11 @@ flex-basis: 50%;
          background: #000;
          padding: 50px 0;
      }
-     .footer ul{
+     .footer .col-3 ul{
          margin-left: 30px;
          
      }
-     .footer ul li{
+     .footer .col-3 ul li{
          color: #6e6b6b;
          font-size: 15px;
          
@@ -247,6 +255,97 @@ flex-basis: 50%;
      .copy{
          color: #524f4f;
          text-align: center;
+     }
+ /* footer */
+/* product page */
+.product-row {
+        margin: 40px 0;
+    }
+    .product-row select{
+        height: 50px;
+        padding: 0 20px;
+        cursor: pointer;
+    }
+    .btn-all{
+        margin: 50px 0;
+    }
+    .btn-all span{
+        border: 1px solid #f3558e;
+        padding: 8px 15px;
+        width: 50px;
+    }
+    .feature-product .row{
+        margin: 20px 0;
+    }
+    .btn-all span:hover{
+        background-color:#f3558e ;
+        color: #e3e3e3;
+    }
+    /* product detail */
+    .product-detail{
+        margin: 50px 0;
+    }
+    
+    .product-detail .col-2{
+       flex-basis: 60%;
+       max-width: 500px;
+       
+    }
+    .product-detail .col-2 select{
+        width: 150px;
+        height: 40px;
+        padding: 10px 10px;
+        border:1px solid #f3558e;
+        }
+        .product-detail .col-2 input{
+            margin-top: 20px;
+            width: 50px;
+            height: 40px;
+            padding: 10px;
+            margin-left: 20px;
+            border:1px solid #f3558e;
+        }
+        .product-detail .col-2 h4{
+            margin-top: 20px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .product-detail .col-2 h1{
+            font-weight: bold;
+        }
+        .product-img {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        
+        }
+        .product-img img{
+            flex-basis: 25%;
+            max-width: 100px;
+            cursor: pointer;
+        }
+        .feature-product h1{
+            font-weight: bold;
+        }
+
+
+
+
+     @media only screen and (max-width: 600px){
+     .row{
+         text-align: center;
+     }
+     .col-1, .col-2, .col-3, .col-5, .col-6{
+         flex-basis: 100%;
+     }
+     .product-detail .col-2 h1{
+         font-size: 26px;
+         line-height: 22px;
+     }
+     .product-detail .col-2 .t-shirt{
+         margin-top: 20px;
+     }
+     
      }
      
 
