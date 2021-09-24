@@ -287,8 +287,8 @@ flex-basis: 50%;
     }
     
     .product-detail .col-2{
-       flex-basis: 60%;
-       max-width: 500px;
+       flex-basis: 50%;
+       min-width: 300px;
        
     }
     .product-detail .col-2 select{
@@ -320,8 +320,8 @@ flex-basis: 50%;
         
         }
         .product-img img{
-            flex-basis: 25%;
-            max-width: 100px;
+            flex-basis: 20%;
+            min-width: 100px;
             cursor: pointer;
         }
         .feature-product h1{
@@ -344,6 +344,10 @@ flex-basis: 50%;
      }
      .product-detail .col-2 .t-shirt{
          margin-top: 20px;
+     }
+     .product-detail .col2 {
+         flex-basis: 100%;
+         
      }
      
      }
